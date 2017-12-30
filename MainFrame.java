@@ -1,6 +1,6 @@
-package TestGame;
+//package TestGame;
 
-//“Ç‚İ‚Ş•W€ƒNƒ‰ƒX‚Ì‰ğà‚Í‚¢‚¿‚¢‚¿‚µ‚È‚¢A‚â‚È‚¹‚½‚©‚µiƒAƒ“ƒpƒ“ƒ}ƒ“‚ÌìÒjA‚ä‚é‚¹‚½‚©‚µ
+//ï¿½Ç‚İï¿½ï¿½Ş•Wï¿½ï¿½ï¿½Nï¿½ï¿½ï¿½Xï¿½Ì‰ï¿½ï¿½Í‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È‚ï¿½ï¿½Aï¿½ï¿½È‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½iï¿½Aï¿½ï¿½ï¿½pï¿½ï¿½ï¿½}ï¿½ï¿½ï¿½Ìï¿½Òjï¿½Aï¿½ï¿½é‚¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 import javax.swing.JFrame;
 import javax.swing.JPanel;
  
@@ -14,7 +14,7 @@ public class MainFrame extends JFrame{
     ResultPanel result = new ResultPanel(this,PanelNames[4]);
      
     public MainFrame(){
-        this.add(start);start.setVisible(true);//ƒQ[ƒ€‹N“®AÅ‰‚Ìƒpƒlƒ‹‚¾‚¯‚ğ•\¦
+        this.add(start);start.setVisible(true);//ï¿½Qï¿½[ï¿½ï¿½ï¿½Nï¿½ï¿½ï¿½ï¿½ï¿½Aï¿½Åï¿½ï¿½Ìƒpï¿½lï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½ï¿½
         this.add(stsel);stsel.setVisible(false);
         this.add(map1);map1.setVisible(false);
         this.add(map2);map2.setVisible(false);
@@ -22,16 +22,16 @@ public class MainFrame extends JFrame{
         this.setBounds(100, 100, 400, 200);
     }
     
-    //ƒƒCƒ“ƒƒ\ƒbƒh
+    //ï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½h
     public static void main(String[] args) {
         MainFrame mf = new MainFrame();
-        mf.setDefaultCloseOperation(EXIT_ON_CLOSE);//ƒoƒc‚ğ‰Ÿ‚·‚ÆI—¹
+        mf.setDefaultCloseOperation(EXIT_ON_CLOSE);//ï¿½oï¿½cï¿½ï¿½ï¿½ï¿½ÆIï¿½ï¿½
         mf.setVisible(true);
     }
     
-    //ˆø”‚P : Œ»İ‚Ìƒpƒlƒ‹ , ˆø”‚Q: ˆÚ“®‚µ‚½‚¢ƒpƒlƒ‹
+    //ï¿½ï¿½ï¿½ï¿½ï¿½P : ï¿½ï¿½ï¿½İ‚Ìƒpï¿½lï¿½ï¿½ , ï¿½ï¿½ï¿½ï¿½ï¿½Q: ï¿½Ú“ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½pï¿½lï¿½ï¿½
     public void PanelChange(JPanel jp, String str){
-        System.out.println("Œ»İ‚Ìƒpƒlƒ‹:" + jp.getName());
+        System.out.println("ï¿½ï¿½ï¿½İ‚Ìƒpï¿½lï¿½ï¿½:" + jp.getName());
         String name = jp.getName();
         
         if(name==PanelNames[0]){

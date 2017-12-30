@@ -1,4 +1,4 @@
-package TestGame;
+//package TestGame;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -21,14 +21,14 @@ public class ResultPanel extends JPanel{
         this.setName("result");
         this.setLayout(null);
         this.setSize(400, 200);
-        paneltitle = new JLabel("‚±‚ê‚Í"
-                +getClass().getCanonicalName()+"ƒNƒ‰ƒX‚Ìƒpƒlƒ‹‚Å‚·");
+        paneltitle = new JLabel("ï¿½ï¿½ï¿½ï¿½ï¿½"
+                +getClass().getCanonicalName()+"ï¿½Nï¿½ï¿½ï¿½Xï¿½Ìƒpï¿½lï¿½ï¿½ï¿½Å‚ï¿½");
         paneltitle.setBounds(0, 5, 400, 40);
         this.add(paneltitle);
         
         
         
-        btn1 = new JButton("ƒXƒe[ƒW‘I‘ğ‚É–ß‚é");
+        btn1 = new JButton("ï¿½Xï¿½eï¿½[ï¿½Wï¿½Iï¿½ï¿½É–ß‚ï¿½");
         btn1.setBounds(200, 50, 150, 40);
         btn1.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent e){
@@ -38,10 +38,10 @@ public class ResultPanel extends JPanel{
         this.add(btn1);
         
         
-        btn2 = new JButton("ƒXƒ^[ƒg‰æ–Ê‚É–ß‚é");
+        btn2 = new JButton("ï¿½Xï¿½^ï¿½[ï¿½gï¿½ï¿½Ê‚É–ß‚ï¿½");
         btn2.setBounds(20, 50, 150, 40);
         btn2.addActionListener(new ActionListener(){
-        	//ˆ—‚µ‚½‚¢“à—e‚ğ‹LqA‚±‚±‚Å‚Íƒpƒlƒ‹ƒ`ƒFƒ“ƒW
+        	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½eï¿½ï¿½Lï¿½qï¿½Aï¿½ï¿½ï¿½ï¿½ï¿½Å‚Íƒpï¿½lï¿½ï¿½ï¿½`ï¿½Fï¿½ï¿½ï¿½W
             public void actionPerformed(ActionEvent e){
                 pc(mf.PanelNames[0]);
             }

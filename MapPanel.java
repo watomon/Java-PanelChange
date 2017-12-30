@@ -1,4 +1,4 @@
-package TestGame;
+//package TestGame;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -7,7 +7,7 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-//ƒQ[ƒ€–{•Ò‚Ì‰æ–Ê
+//ï¿½Qï¿½[ï¿½ï¿½ï¿½{ï¿½Ò‚Ì‰ï¿½ï¿½
 public class MapPanel extends JPanel {
     
     MainFrame mf;
@@ -19,25 +19,25 @@ public class MapPanel extends JPanel {
         this.setName(s);
         this.setLayout(null);
         this.setSize(400, 200);
-        JLabel paneltitle = new JLabel("‚±‚ê‚Í"
-                +getClass().getCanonicalName()+"ƒNƒ‰ƒX‚Ìƒpƒlƒ‹‚Å‚·");
+        JLabel paneltitle = new JLabel("ï¿½ï¿½ï¿½ï¿½ï¿½"
+                +getClass().getCanonicalName()+"ï¿½Nï¿½ï¿½ï¿½Xï¿½Ìƒpï¿½lï¿½ï¿½ï¿½Å‚ï¿½");
         paneltitle.setBounds(0, 5, 400, 40);
         this.add(paneltitle);
         
-        JButton btn1 = new JButton("ƒQ[ƒ€ƒNƒŠƒA");
+        JButton btn1 = new JButton("ï¿½Qï¿½[ï¿½ï¿½ï¿½Nï¿½ï¿½ï¿½A");
         btn1.setBounds(20, 50, 150, 40);
         btn1.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent e){
-                pc(mf.PanelNames[4]);//ƒNƒŠƒA‚µ‚½‚çA‚±‚ê‚ğŒÄ‚Ño‚·
+                pc(mf.PanelNames[4]);//ï¿½Nï¿½ï¿½ï¿½Aï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Aï¿½ï¿½ï¿½ï¿½ï¿½Ä‚Ñoï¿½ï¿½
             }
         });
         this.add(btn1);
         
-        JButton btn2 = new JButton("ƒQ[ƒ€ƒI[ƒo[");
+        JButton btn2 = new JButton("ï¿½Qï¿½[ï¿½ï¿½ï¿½Iï¿½[ï¿½oï¿½[");
         btn2.setBounds(200, 50, 150, 40);
         btn2.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent e){
-                pc(mf.PanelNames[4]);///ƒQ[ƒ€ƒI[ƒo[‚µ‚½‚çA‚±‚ê‚ğŒÄ‚Ño‚·
+                pc(mf.PanelNames[4]);///ï¿½Qï¿½[ï¿½ï¿½ï¿½Iï¿½[ï¿½oï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Aï¿½ï¿½ï¿½ï¿½ï¿½Ä‚Ñoï¿½ï¿½
             }
         });
         this.add(btn2);

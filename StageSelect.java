@@ -1,4 +1,4 @@
-package TestGame;
+//package TestGame;
 
 
 import java.awt.event.ActionEvent;
@@ -8,7 +8,7 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-//@ƒXƒe[ƒWƒZƒŒƒNƒg‚Ì‰æ–Ê
+//ï¿½@ï¿½Xï¿½eï¿½[ï¿½Wï¿½Zï¿½ï¿½ï¿½Nï¿½gï¿½Ì‰ï¿½ï¿½
  
 public class StageSelect extends JPanel {
 	
@@ -23,12 +23,12 @@ public class StageSelect extends JPanel {
         this.setName("stsel");
         this.setLayout(null);
         this.setSize(400, 200);
-        paneltitle = new JLabel("‚±‚ê‚Í"
-                +getClass().getCanonicalName()+"ƒNƒ‰ƒX‚Ìƒpƒlƒ‹‚Å‚·");
+        paneltitle = new JLabel("ï¿½ï¿½ï¿½ï¿½ï¿½"
+                +getClass().getCanonicalName()+"ï¿½Nï¿½ï¿½ï¿½Xï¿½Ìƒpï¿½lï¿½ï¿½ï¿½Å‚ï¿½");
         paneltitle.setBounds(0, 5, 400, 40);
         this.add(paneltitle);
         
-        btn1 = new JButton("ƒXƒe[ƒWl‚ÉˆÚ“®");
+        btn1 = new JButton("ï¿½Xï¿½eï¿½[ï¿½Wlï¿½ÉˆÚ“ï¿½");
         btn1.setBounds(20, 50, 150, 40);
         btn1.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent e){
@@ -37,7 +37,7 @@ public class StageSelect extends JPanel {
         });
         this.add(btn1);
         
-        btn2 = new JButton("ƒXƒe[ƒW2‚ÉˆÚ“®");
+        btn2 = new JButton("ï¿½Xï¿½eï¿½[ï¿½W2ï¿½ÉˆÚ“ï¿½");
         btn2.setBounds(200, 50, 150, 40);
         btn2.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent e){
@@ -47,10 +47,10 @@ public class StageSelect extends JPanel {
         this.add(btn2);
         
         
-        btn3 = new JButton("–ß‚é");
+        btn3 = new JButton("ï¿½ß‚ï¿½");
         btn3.setBounds(20, 100, 150, 40);
         btn3.addActionListener(new ActionListener(){
-        	//ˆ—‚µ‚½‚¢“à—e‚ğ‹LqA‚±‚±‚Å‚Íƒpƒlƒ‹ƒ`ƒFƒ“ƒW
+        	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½eï¿½ï¿½Lï¿½qï¿½Aï¿½ï¿½ï¿½ï¿½ï¿½Å‚Íƒpï¿½lï¿½ï¿½ï¿½`ï¿½Fï¿½ï¿½ï¿½W
             public void actionPerformed(ActionEvent e){
                 pc(mf.PanelNames[0]);
             }

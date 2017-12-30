@@ -1,28 +1,28 @@
-package TestGame;
+//package TestGame;
 
 import java.math.BigDecimal;
 import framework.game2D.Map2D;
 
 /**
- * –À˜HƒQ[ƒ€‚ÌƒXƒe[ƒW‚ÌƒNƒ‰ƒX
+ * ï¿½ï¿½ï¿½Hï¿½Qï¿½[ï¿½ï¿½ï¿½ÌƒXï¿½eï¿½[ï¿½Wï¿½ÌƒNï¿½ï¿½ï¿½X
  * @author T.Kuno
  *
  */
 public class MapStage extends Map2D {
-	// ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+	// ï¿½Rï¿½ï¿½ï¿½Xï¿½gï¿½ï¿½ï¿½Nï¿½^
 	public MapStage() {
 		super(new String[]{
-				"data\\RPG\\grass1.jpg", //0, ƒ^ƒ[‚ª’u‚¯‚éêŠ
-				"data\\RPG\\grass2.jpg", //1, ƒ^ƒ[‚ğ’u‚¢‚½êŠ
-				"data\\RPG\\road1.jpg", //2, “G‚Ì’Ê‚é“¹
-				"data\\RPG\\tree.jpg",	//3, ‰½‚à’u‚¯‚È‚¢êŠ
-				"data\\RPG\\rock.jpg", //4, ç‚éêŠ
-				"data\\RPG\\block.jpg"}, //5, “G‚ªo‚Ä‚­‚éêŠ
+				"data\\RPG\\grass1.jpg", //0, ï¿½^ï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½uï¿½ï¿½ï¿½ï¿½êŠ
+				"data\\RPG\\grass2.jpg", //1, ï¿½^ï¿½ï¿½ï¿½[ï¿½ï¿½uï¿½ï¿½ï¿½ï¿½ï¿½êŠ
+				"data\\RPG\\road1.jpg", //2, ï¿½Gï¿½Ì’Ê‚é“¹
+				"data\\RPG\\tree.jpg",	//3, ï¿½ï¿½ï¿½ï¿½uï¿½ï¿½ï¿½È‚ï¿½ï¿½êŠ
+				"data\\RPG\\rock.jpg", //4, ï¿½ï¿½ï¿½êŠ
+				"data\\RPG\\block.jpg"}, //5, ï¿½Gï¿½ï¿½ï¿½oï¿½Ä‚ï¿½ï¿½ï¿½êŠ
 		3);
 	}
 	
-	// ’ŠÛƒƒ\ƒbƒh‚ÌÀ‘•
-	//@0`6:ˆÚ“®‰Â”\@7ˆÈã:áŠQ•¨@
+	// ï¿½ï¿½ï¿½Ûƒï¿½ï¿½\ï¿½bï¿½hï¿½Ìï¿½ï¿½ï¿½
+	//ï¿½@0ï¿½`6:ï¿½Ú“ï¿½ï¿½Â”\ï¿½@7ï¿½Èï¿½:ï¿½ï¿½Qï¿½ï¿½ï¿½@
 	@Override
 	public int[][] createMap() {
 		int[][] map = {
@@ -47,7 +47,7 @@ public class MapStage extends Map2D {
 	}
 
 	public boolean checkGridPoint(Player mazeSpritePlayer) {
-		// ŠÛ‚ßŒë·ˆ——p•Ï”‚Ì¶¬
+		// ï¿½Û‚ßŒë·ï¿½ï¿½ï¿½ï¿½ï¿½pï¿½Ïï¿½ï¿½Ìï¿½ï¿½ï¿½
 		double mazeSpritePositionX = new BigDecimal(mazeSpritePlayer
 				.getPosition().getX()).setScale(1, BigDecimal.ROUND_DOWN)
 				.doubleValue();
@@ -55,7 +55,7 @@ public class MapStage extends Map2D {
 				.getPosition().getY()).setScale(1, BigDecimal.ROUND_DOWN)
 				.doubleValue();
 		
-		// ƒXƒe[ƒW‚Ì\¬ƒIƒuƒWƒFƒNƒg‚ÌˆÊ’u‚ÆƒvƒŒƒCƒ„[‚ÌˆÊ’u‚ª“¯‚¶‚©‚Ç‚¤‚©‚Á”»’è‚·‚é
+		// ï¿½Xï¿½eï¿½[ï¿½Wï¿½Ì\ï¿½ï¿½ï¿½Iï¿½uï¿½Wï¿½Fï¿½Nï¿½gï¿½ÌˆÊ’uï¿½Æƒvï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½[ï¿½ÌˆÊ’uï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½è‚·ï¿½ï¿½
 		for (int i = 0; i < this.getStageObjectList().size(); i++) {
 			if (
 					mazeSpritePositionX == this.getStageObjectList().get(i).getPosition().getX()
